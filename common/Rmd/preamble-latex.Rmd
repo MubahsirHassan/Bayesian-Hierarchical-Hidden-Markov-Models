@@ -1,0 +1,49 @@
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{bm} % True bold symbols
+\usepackage{float} % Image and table position
+\usepackage{tabularx} % Tables
+\usepackage{tikz} % Graphs
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage{lscape} % Landscape mode
+\usepackage{hyperref} % links
+\usepackage{booktabs}
+
+% Math operators
+\DeclareMathOperator*{\argmax}{\operatorname*{arg\,max}}
+\DeclareMathOperator*{\argmin}{\operatorname*{arg\,min}}
+\DeclareMathOperator{\evsym}{E}
+\newcommand\ev[1]{\evsym\left\langle#1\right\rangle}
+\DeclareMathOperator{\vsym}{V}
+\newcommand\vv[1]{\vsym\left\langle#1\right\rangle}
+
+% Math commands
+\newcommand{\mat}[1]{\bm{#1}}
+
+% Math symbols
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\RR}{\mathbb{R}}
+
+% Graphs
+\usetikzlibrary{positioning}
+
+% Tables
+% \newcolumntype{R}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+% Captions
+\setlength{\abovecaptionskip}{2pt plus 0pt minus 0pt}
+\setlength{\belowcaptionskip }{2pt plus 0pt minus 0pt}
+
+% Landscape
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+
+% Links and colours
+\hypersetup{hidelinks} % no box around links
+\hypersetup{ % links with pretty colours
+  colorlinks   = true, % Colours links instead of ugly boxes
+  urlcolor     = blue, % Colour for external hyperlinks
+  linkcolor    = blue, % Colour of internal links
+  citecolor   = red % Colour of citations
+}
